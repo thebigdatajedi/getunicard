@@ -1,0 +1,24 @@
+stages:
+  - build
+  - deploy
+
+deploy_dev:
+  stage: deploy
+  script:
+    - liquibase --defaultsFile=src/main/resources/liquibase-dev.properties update
+  only:
+    - develop
+
+deploy_stage:
+  stage: deploy
+  script:
+    - liquibase --defaultsFile=src/main/resources/liquibase-stage.properties update
+  only:
+    - stage
+
+deploy_prod:
+  stage: deploy
+  script:
+    - liquibase --defaultsFile=src/main/resources/liquibase-prod.properties update
+  only:
+    - master
