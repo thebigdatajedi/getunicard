@@ -1,7 +1,7 @@
-package com.example.featuremanagementapp.service;
+package com.canyonstorm.getunicard.service;
 
-import com.example.featuremanagementapp.model.Task;
-import com.example.featuremanagementapp.repository.TaskRepository;
+import com.canyonstorm.getunicard.repository.TaskRepository;
+import com.canyonstorm.getunicard.model.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

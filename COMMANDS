@@ -1,0 +1,5 @@
+`liquibase --defaultsFile=src/main/resources/liquibase-prod.properties update`
+
+`liquibase --defaultsFile=src/main/resources/liquibase-stage.properties update`
+
+`liquibase --defaultsFile=src/main/resources/liquibase-dev.properties update`

@@ -1,4 +1,4 @@
-package com.example.featuremanagementapp.model;
+package com.canyonstorm.getunicard.model;
 
 import javax.persistence.*;
 import java.util.List;
